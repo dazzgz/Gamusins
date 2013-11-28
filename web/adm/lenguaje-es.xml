@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Textos>
+	<!-- Comunes del Panel de Control -->
+  <Panel_de_Control>Panel de Control</Panel_de_Control>
+  <No_existe_ningun_usuario_con_los_datos_introducidos>No existe ningún usuario con los datos introducidos</No_existe_ningun_usuario_con_los_datos_introducidos>
+  <Correcto>Correcto</Correcto>
+  <Incorrecto>Incorrecto</Incorrecto>
+  <Introduzca_Login_y_Password_para_acceder>Introduzca Login y Password para acceder</Introduzca_Login_y_Password_para_acceder>
+  <Intento_acceso_incorrecto>Intento de acceso incorrecto</Intento_acceso_incorrecto>
+  <Intentelo_nuevo>Intentelo de nuevo</Intentelo_nuevo>
+  <Lo_sentimos_pero_usted_no_tiene_acceso_a_este_apartado_del_web>Lo sentimos, pero usted no tiene acceso a este apartado del web</Lo_sentimos_pero_usted_no_tiene_acceso_a_este_apartado_del_web>
+  <Debe_introducir_login_de_usuario>Debe introducir un login de usuario</Debe_introducir_login_de_usuario>
+  <Debe_introducir_una_contrasena>Debe introducir una contraseña</Debe_introducir_una_contrasena>
+  <contrasena_debe_tener_al_menos_4_caracteres>La contraseña debe tener al menos 4 caracteres</contrasena_debe_tener_al_menos_4_caracteres>
+  <Idioma>Idioma</Idioma>
+  <Acceder>Acceder</Acceder>
+
+  <Selecciona_idioma>Selecciona idioma</Selecciona_idioma>
+  <idioma_txt_es>Castellano</idioma_txt_es>
+  <idioma_txt_en>Inglés</idioma_txt_en>
+  <idioma_txt_ja>Japonés</idioma_txt_ja>
+  <idioma_txt_ca>Catalán</idioma_txt_ca>
+  <idioma_txt_det_es>ESP</idioma_txt_det_es>
+  <idioma_txt_det_en>ENG</idioma_txt_det_en>
+  <idioma_txt_det_ja>JAP</idioma_txt_det_ja>
+  <idioma_txt_det_ca>CAT</idioma_txt_det_ca>
+  
+  <Mis_datos>Mis datos</Mis_datos>
+  <Necesitas_ayuda>¿Necesitas Ayuda?</Necesitas_ayuda>
+  <Salir>Salir</Salir>
+  <Listado_de_usuarios>Listado de usuarios</Listado_de_usuarios>
+  <Listado_de_roles>Listado de roles</Listado_de_roles>
+  <Listado_de_accesos>Listado de accesos</Listado_de_accesos>
+  <Conectado_como>Conectado como</Conectado_como>
+  <Ayuda>¿Ayuda?</Ayuda>
+  <Desconectar>Desconectar</Desconectar>
+
+  <!-- Menu -->
+  <Inicio>Inicio</Inicio>
+  <Final>Final</Final>
+  <Usuario>Usuario</Usuario>
+  <Usuarios>Usuarios</Usuarios>
+  <Roles>Roles</Roles>
+  <rol>rol</rol>
+  <rol_de_usuario>rol de usuario</rol_de_usuario>
+  <Rol_de_usuario>Rol de usuario</Rol_de_usuario>
+  <Roles_de_usuario>Roles de usuario</Roles_de_usuario>
+  <Datos_de_usuario>Datos de usuario</Datos_de_usuario>
+  <Administracion>Administración</Administracion>
+  <Accesos_directos>Accesos directos</Accesos_directos>
+  <Accesos_al_panel_de_control>Accesos al panel de control</Accesos_al_panel_de_control>
+  <Accesos>Accesos</Accesos>
+  <Ficheros>Ficheros</Ficheros>
+	<Mantenimientos>Mantenimientos</Mantenimientos>
+	<Auxiliares>Auxiliares</Auxiliares>
+	<Idiomas>Idiomas</Idiomas>
+	
+  <!-- Pie -->
+  <bloquear_barra_navegacion>Bloquear barra de navegación</bloquear_barra_navegacion>
+  <ajustar_pantalla>Ajustar a pantalla</ajustar_pantalla>
+  <ocultar_barra_navegacion>Ocultar Barra de Navegación</ocultar_barra_navegacion>
+
+  <Acepto_las_condiciones>Acepto las condiciones</Acepto_las_condiciones>
+  <Aceptar>Aceptar</Aceptar>
+  <Cancelar>Cancelar</Cancelar>
+  <Guardar>Guardar</Guardar>
+  <Borrar>Borrar</Borrar>
+  <Volver>Volver</Volver>
+  <Nuevo>Nuevo</Nuevo>
+  <Texto>Texto</Texto>
+  <Ficha>Ficha</Ficha>
+  <Editar>Editar</Editar>
+  <Imagen>Imagen</Imagen>
+  <Detalle>Detalle</Detalle>
+
+  <texto_debe_tener_al_menos_4_caracteres>El campo 'texto' debe tener al menos 4 caracteres</texto_debe_tener_al_menos_4_caracteres>
+  <Inicio>Inicio</Inicio>
+  <Filtros>Filtros</Filtros>
+  <Nombre>Nombre</Nombre>
+  <Apellidos>Apellidos</Apellidos>
+  <Poblacion>Población</Poblacion>
+  <Filtro_de_registros>Filtro de registros</Filtro_de_registros>
+  <Puedes_aplicar_filtros_para_reducir_los_resultados_de_busqueda>Puedes aplicar filtros para reducir los resultados de búsqueda</Puedes_aplicar_filtros_para_reducir_los_resultados_de_busqueda>
+  <Filtrar_resultados>Filtrar resultados</Filtrar_resultados>
+  <Limpiar_filtro>Limpiar filtro</Limpiar_filtro>
+  <Codigo>Código</Codigo>
+  <Telefono>Teléfono</Telefono>
+  <Ficha>Ficha</Ficha>
+  <Ver_Detalle>Ver Detalle</Ver_Detalle>
+  
+  <Total_Registros>Total Registros</Total_Registros>
+  <mostrando_del>mostrando del</mostrando_del>
+  <al>al</al>
+  <Ver_Estado>Ver Estado</Ver_Estado>
+  <Estado>Estado</Estado>
+  <Introduzca_un_nombre_de_usuario>Introduzca un nombre de usuario</Introduzca_un_nombre_de_usuario>
+  <Introduzca_un_login_de_usuario>Introduzca un login de usuario</Introduzca_un_login_de_usuario>
+
+  <Al_menos_8_caracteres>Al menos 8 caracteres</Al_menos_8_caracteres>
+  <Al_menos_X_caracteres>Al menos %1 caracteres</Al_menos_X_caracteres>
+  <Introduzca_al_menos_8_caracteres>Introduzca al menos 8 caracteres</Introduzca_al_menos_8_caracteres>
+  <Introduzca_al_menos_X_caracteres>Introduzca al menos %1 caracteres</Introduzca_al_menos_X_caracteres>
+  <Introduzca_como_maximo_X_caracteres>Introduzca como máximo %1 caracteres</Introduzca_como_maximo_X_caracteres>
+  <Atencion_Introduzca_el_campo>Atención: Introduzca el campo</Atencion_Introduzca_el_campo>
+  <solo_en_caso_de_querer_modificarlo>solo en caso de querer modificarlo</solo_en_caso_de_querer_modificarlo>
+  <recomendado_letras_y_numeros>recomendado letras y números</recomendado_letras_y_numeros>
+  <Introduzca_un_password>Introduzca un password</Introduzca_un_password>
+  <Password>Password</Password>
+  <Confirmar_password>Confirmar password</Confirmar_password>
+  <Los_passwords_deben_coincidir>Los passwords deben coincidir</Los_passwords_deben_coincidir>
+  
+  <nif_debe_tener_al_menos_4_caracteres>NIF debe tener al menos 4 caracteres</nif_debe_tener_al_menos_4_caracteres>
+  
+  <Datos_de_usuario>Datos de usuario</Datos_de_usuario>
+  <Observaciones>Observaciones</Observaciones>
+  <Codigo>Código</Codigo>
+  <Numero_de_usuario>Número de usuario</Numero_de_usuario>
+  <Email>Email</Email>
+  <Login>Login</Login>
+  <Rol>Rol</Rol>
+  
+  <caracteres>caracteres</caracteres>
+	<minimo>mínimo</minimo>
+	<maximo>máximo</maximo>
+	<Si>Si</Si>
+	<No>No</No>
+  <Accede>Accede</Accede>
+  <No_accede>NO accede</No_accede>
+  <Activo>Activo</Activo>
+  <No_activo>NO activo</No_activo>
+  <Bloqueado>Bloqueado</Bloqueado>
+  <Boletin>Boletín</Boletin>
+  
+  <Agente>Agente</Agente>
+  <Electrica>Eléctrica</Electrica>
+  <Tipo_contrato>Tipo de contrato</Tipo_contrato>
+  <Tarifa>Tarifa</Tarifa>
+  <Fecha_de_baja>Fecha de baja</Fecha_de_baja>
+  <Fecha_de_lectura_inicial>Fecha de lectura inicial</Fecha_de_lectura_inicial>
+  <Fecha_de_lectura_final>Fecha de lectura final</Fecha_de_lectura_final>
+  <Introduzca_una_fecha_de_lectura_inicial>Introduzca una fecha de lectura inicial</Introduzca_una_fecha_de_lectura_inicial>
+  <Introduzca_una_fecha_de_lectura_final>Introduzca una fecha de lectura final</Introduzca_una_fecha_de_lectura_final>
+  <Direccion_IP>Dirección IP</Direccion_IP>
+  <Direccion>Dirección</Direccion>
+  <CP>Código postal</CP>
+  <CUPS>CUPS</CUPS>
+  <Localidad>Localidad</Localidad>
+  <Provincia>Provincia</Provincia>
+  <Pais>País</Pais>
+  <Telefono>Teléfono</Telefono>
+  <Movil>Movil</Movil>
+  <Fax>Fax</Fax>
+  <Observaciones>Observaciones</Observaciones>
+  <Fecha_de_nacimiento>Fecha de nacimiento</Fecha_de_nacimiento>
+  <CIF>CIF</CIF>
+  <NIF>NIF</NIF>
+  <NIF_CIF>NIF / CIF</NIF_CIF>
+  <CP>C.P.</CP>
+  <Activo>Activo</Activo>
+  <Introduzca_la_informacion_requerida>Introduzca la información requerida</Introduzca_la_informacion_requerida>
+  <Fecha_de_alta>Fecha de alta</Fecha_de_alta>
+  <Ultimo_acceso>Último acceso</Ultimo_acceso>
+  <Ultima_modificacion>Última modificación</Ultima_modificacion>
+  <Ultima_actualizacion>Última actualización</Ultima_actualizacion>
+  <Introduzca_una_direccion_de_email>Introduzca una dirección de email</Introduzca_una_direccion_de_email>
+  <Introduzca_una_direccion_de_email_valida>Introduzca una dirección de email válida</Introduzca_una_direccion_de_email_valida>
+  <Introduzca_el_nombre>Introduzca el nombre</Introduzca_el_nombre>
+  <Introduzca_los_apellidos>Introduzca los apellidos</Introduzca_los_apellidos>
+  <Introduzca_una_fecha_de_nacimiento>Introduzca una fecha de nacimiento</Introduzca_una_fecha_de_nacimiento>
+  <Introduzca_solo_numeros>Introduzca solo números</Introduzca_solo_numeros>
+  <Introduzca_una_fecha_de_alta>Introduzca una fecha de alta</Introduzca_una_fecha_de_alta>
+  <Introduzca_una_fecha_de_ultimo_acceso>Introduzca una fecha de último acceso</Introduzca_una_fecha_de_ultimo_acceso>
+  <Introduzca_una_fecha_de_ultima_actualizacion_de_datos>Introduzca una fecha de última actualización de datos</Introduzca_una_fecha_de_ultima_actualizacion_de_datos>
+
+  <No_ha_seleccionado_registro_para_editar>No ha seleccionado registro para editar</No_ha_seleccionado_registro_para_editar>
+  <Pulse>Pulse</Pulse>
+  <aqui>aquí</aqui>
+  <para_continuar>para continuar</para_continuar>
+  <Registro_creado_con_exito>Registro creado con éxito</Registro_creado_con_exito>
+  <Registro_actualizado_con_exito>Registro actualizado con éxito</Registro_actualizado_con_exito>
+  
+  <El_Email_seleccionado_ya_se_encuentra_presente_en_la_BD>El Email seleccionado ya se encuentra presente en la Base de Datos y debería ser único</El_Email_seleccionado_ya_se_encuentra_presente_en_la_BD>
+  <El_campo_Email_no_es_correcto>El campo Email no es correcto</El_campo_Email_no_es_correcto>
+  <El_campo_Nombre_no_puede_dejarse_en_blanco>El campo Nombre no puede dejarse en blanco</El_campo_Nombre_no_puede_dejarse_en_blanco>
+  <El_campo_X_no_puede_dejarse_en_blanco>El campo %1 no puede dejarse en blanco</El_campo_X_no_puede_dejarse_en_blanco>
+  <El_campo_X_ya_esta_registrado_en_la_BD>El campo %1 ya está registrado en la BD</El_campo_X_ya_esta_registrado_en_la_BD>
+  
+  <Guardar>Guardar</Guardar>
+  <Cancelar>Cancelar</Cancelar>
+	
+  <No_se_ha_encontrado_el_registro_solicitado>No se ha encontrado el registro solicitado</No_se_ha_encontrado_el_registro_solicitado>
+  <No_se_ha_encontrado_el_usuario_solicitado>No se ha encontrado el usuario solicitado</No_se_ha_encontrado_el_usuario_solicitado>
+  <Confirmar_borrado_de_registros>Confirmar borrado de registros</Confirmar_borrado_de_registros>
+  <Seguro_que_desea_borrar_los_elementos_seleccionados>Seguro que desea borrar los elementos seleccionados</Seguro_que_desea_borrar_los_elementos_seleccionados>
+  <Se_ha_borrado>Se ha borrado</Se_ha_borrado>
+  <Se_han_borrado>Se han borrado</Se_han_borrado>
+  <Borrando>Borrando</Borrando>
+  <usuario>usuario</usuario>
+  <usuarios>usuarios</usuarios>
+
+  <Se_ha_desactivado>Se ha desactivado</Se_ha_desactivado>
+  <Se_han_desactivado>Se han desactivado</Se_han_desactivado>
+  <Desactivando>Desactivando</Desactivando>
+  
+  <El_codigo_no_se_puede_cambiar>El código no se puede cambiar</El_codigo_no_se_puede_cambiar>
+  <Seleccione_un_elemento_de_la_lista>Seleccione un elemento de la lista</Seleccione_un_elemento_de_la_lista>
+  <Seleccione_un_elemento>Seleccione un elemento</Seleccione_un_elemento>
+  
+  <Adjuntar_archivo>Adjuntar archivo</Adjuntar_archivo>
+  <Adjuntar_archivos>Adjuntar archivos</Adjuntar_archivos>
+  <Seleccione_archivo>Seleccione archivo</Seleccione_archivo>
+  <Cambiar>Cambiar</Cambiar>
+  <Descripcion>Descripción</Descripcion>
+
+  <Razon_social>Razón social</Razon_social>
+  <Nombre_comercial>Nombre comercial</Nombre_comercial>
+  <Tipo_empresa>Tipo empresa</Tipo_empresa>
+  <CIF>CIF</CIF>
+  <Contacto>Contacto</Contacto>
+  <Persona_de_contacto>Persona de contacto</Persona_de_contacto>
+  <Ver_Trabajadores>Ver Trabajadores</Ver_Trabajadores>
+  <Ver_Ficheros>Ver Ficheros</Ver_Ficheros>
+  <Ficheros>Ficheros</Ficheros>
+  <Tipo>Tipo</Tipo>
+
+  <!-- Ficheros -->
+  <fichero>fichero</fichero>
+  <ficheros>ficheros</ficheros>
+  <Datos_de_fichero>Datos de fichero</Datos_de_fichero>
+  <Numero_de_fichero>Numero de fichero</Numero_de_fichero>
+  <Ruta>Ruta</Ruta>
+  <Nombre>Nombre</Nombre>
+  <Tamano>Tamaño</Tamano>
+  <Formato>Formato</Formato>
+  <Tamano_fichero_excesivo>El tamaño en bytes del fichero supera el máximo permitido</Tamano_fichero_excesivo>
+  <Fecha_de_alta>Fecha de alta</Fecha_de_alta>
+  
+  <Seleccione_un_archivo_para_adjuntar>Seleccione un archivo para adjuntar</Seleccione_un_archivo_para_adjuntar>
+  <Listado_de_ficheros>Listado de ficheros</Listado_de_ficheros>
+  <dias>días</dias>
+	<Mensajes>Mensajes</Mensajes>
+	
+  <!-- Textos de los filtros -->
+  <Filtro_aplicado>Filtro aplicado</Filtro_aplicado>
+  <Orden_ascendente>Orden ascendente</Orden_ascendente>
+  <Orden_descendente>Orden descendente</Orden_descendente>
+  <Fecha_Desde>Fecha Desde</Fecha_Desde>
+  <Fecha_Hasta>Fecha Hasta</Fecha_Hasta>
+  <Factura_Desde>Factura Desde</Factura_Desde>
+  <Factura_Hasta>Factura Hasta</Factura_Hasta>
+  <Importe_Desde>Importe Desde</Importe_Desde>
+  <Importe_Hasta>Importe Hasta</Importe_Hasta>
+  <Texto_a_buscar>Texto a buscar</Texto_a_buscar>
+  <Desde>Desde</Desde>
+  <Hasta>Hasta</Hasta>
+  <Total_Desde>Total Desde</Total_Desde>
+  <Total_Hasta>Total Hasta</Total_Hasta>
+  <No_se_han_encontrado_resultados_que_cumplan_las_condiciones_establecidas>No se han encontrado resultados que cumplan las condiciones establecidas</No_se_han_encontrado_resultados_que_cumplan_las_condiciones_establecidas>
+  <RESULTADO_DE_LA_BUSQUEDA>RESULTADO DE LA BUSQUEDA</RESULTADO_DE_LA_BUSQUEDA>
+  <Reset>Limpiar campos</Reset>
+  <Seleccionar>Seleccionar</Seleccionar>
+
+  <!-- Mensajes y errores -->
+  <Alta_de>Alta de</Alta_de>
+  <Edicion_de>Edición de</Edicion_de>
+  <Borrado_de>Borrado de</Borrado_de>
+  
+  <Por_favor_espere>Por favor espere</Por_favor_espere>
+
+  <CORRECTO>CORRECTO</CORRECTO>
+  <ERROR>ERROR</ERROR>
+  <Lo_sentimos>Lo sentimos</Lo_sentimos>
+  <AVISO>AVISO</AVISO>
+  <ATENCION>ATENCION</ATENCION>
+  <INFORMACION>INFORMACIÓN</INFORMACION>
+  
+  <Prohibido_la_pagina_que_buscas_no_es_accesible>Prohibido, la página que buscas no es accesible</Prohibido_la_pagina_que_buscas_no_es_accesible>
+  <Lo_sentimos_la_pagina_que_buscas_no_existe>Lo sentimos, la página que buscas no existe</Lo_sentimos_la_pagina_que_buscas_no_existe>
+  <Lo_sentimos_error_interno_del_servidor>Lo sentimos, la página que buscas ha generado un error interno del servidor</Lo_sentimos_error_interno_del_servidor>
+
+	<!-- ESPECIFICOS -->
+	<Idioma>Idioma</Idioma>
+	<Empleados>Empleados</Empleados>
+	<Clientes>Clientes</Clientes>
+	<Trabajos>Trabajos</Trabajos>
+	<Servicios>Servicios</Servicios>
+	<Tipos>Tipos</Tipos>
+	<Categorias>Categorías</Categorias>
+	
+	<Textos_front>Textos front-end</Textos_front>
+	<Imagenes_front>Imágenes front-end</Imagenes_front>
+	
+	<Listado_de_tipos>Listado de tipos</Listado_de_tipos>
+	<tipos>tipos</tipos>
+	<tipo>tipo</tipo>
+	<Orden>Orden</Orden>
+	
+	<Listado_de_categorias>Listado de categorías</Listado_de_categorias>
+	<categoria>categoría</categoria>
+	<categorias>categorías</categorias>
+	<Padre>Padre</Padre>
+	
+	<Listado_de_clientes>Listado de clientes</Listado_de_clientes>
+	<cliente>cliente</cliente>
+	<clientes>clientes</clientes>
+	<Foto>Foto</Foto>
+	<URL>URL</URL>
+	<Introduzca_una_url_valida_comenzando_con>Introduzca una url válida, comenzando con</Introduzca_una_url_valida_comenzando_con>
+	
+	<Listado_de_empleados>Listado de empleados</Listado_de_empleados>
+	<empleado>empleado</empleado>
+	<empleados>empleados</empleados>
+	<Introduzca_el_campo_X>Introduzca el campo %1</Introduzca_el_campo_X>
+	<Introduzca_un_valor_para_el_campo_X>Introduzca un valor para el campo %1</Introduzca_un_valor_para_el_campo_X>
+	
+	<Facebook>Facebook</Facebook>
+	<Twitter>Twitter</Twitter>
+	<LinkedIn>LinkedIn</LinkedIn>
+	
+	<Categoria>Categoría</Categoria>
+	<Entradilla>Entradilla</Entradilla>
+	<Fecha>Fecha</Fecha>
+	<Destacado>Destacado</Destacado>
+	<PieFoto>Pie de foto</PieFoto>
+	<Video>Video</Video>
+	<Informacion>Información</Informacion>
+		
+	<Listado_de_servicios>Listado de servicios</Listado_de_servicios>
+	<servicio>servicio</servicio>
+	<servicios>servicios</servicios>
+	
+	<Listado_de_textos_de_idioma>Listado de textos de idioma</Listado_de_textos_de_idioma>
+	<texto_de_idioma>texto de idioma</texto_de_idioma>
+	<Listado_de_imagenes_de_idioma>Listado de imagenes de idioma</Listado_de_imagenes_de_idioma>
+	<imagen_de_idioma>imagen de idioma</imagen_de_idioma>
+	<Seccion>Sección</Seccion>
+	<Tag>Tag</Tag>
+	<Pie>Pie</Pie>
+	<Seguro_que_desea_copiar_los_elementos_seleccionados>Seguro que desea copiar los elementos seleccionados</Seguro_que_desea_copiar_los_elementos_seleccionados>
+  <Se_ha_copiado>Se ha copiado</Se_ha_copiado>
+  <Se_han_copiado>Se han copiado</Se_han_copiado>
+  <Copiando>Copiando</Copiando>
+  <Copiar>Copiar</Copiar>
+  <Copiar_a>Copiar a:</Copiar_a>
+  
+  <Generacion_remesas>Generacion de remesas</Generacion_remesas>
+  <Importacion_XML>Importación XML</Importacion_XML>
+  <Exportacion_XML>Exportación XML</Exportacion_XML>
+  <Datos_PERSONALES>Datos PERSONALES</Datos_PERSONALES>
+  <CLIENTE>CLIENTE</CLIENTE>
+  <FACTURACION>FACTURACIÓN</FACTURACION>
+  <AHORRO>AHORRO</AHORRO>
+  <FACTURAS_GENERADAS_A_PARTIR_DE_CONSUMOS>FACTURAS GENERADAS A PARTIR DE CONSUMOS</FACTURAS_GENERADAS_A_PARTIR_DE_CONSUMOS>
+  <MENSAJES>MENSAJES</MENSAJES>
+  <ESTADISTICAS>ESTADISTICAS</ESTADISTICAS>
+  <AVISOS>AVISOS</AVISOS>
+  <Fichero_P3>Fichero P3</Fichero_P3>
+  <Fichero_P1>Fichero P1</Fichero_P1>
+  <Listado_de_importaciones>Listado de importaciones</Listado_de_importaciones>
+  <Listado_de_exportaciones>Listado de exportaciones</Listado_de_exportaciones>
+  <Importaciones_XML>Importaciones XML</Importaciones_XML>
+  <Importar>Importar</Importar>
+  <Exportaciones_XML>Exportaciones XML</Exportaciones_XML>
+  <Exportar>Exportar</Exportar>
+  <Fecha_de_ejecucion>Fecha de ejecución</Fecha_de_ejecucion>
+  <Correcto>Correcto</Correcto>
+  <Directorio>Directorio</Directorio>
+  <Fichero>Fichero</Fichero>
+  <Log>Log</Log>
+  <Log_de_importacion>Log de importación</Log_de_importacion>
+  <Importacion_sencilla_XML>Importación sencilla XML</Importacion_sencilla_XML>
+  <Importacion_multiple_XML>Importación multiple XML</Importacion_multiple_XML>
+  <Log_de_exportacion>Log de exportación</Log_de_exportacion>
+  <Exportacion_sencilla_XML>Exportación sencilla XML</Exportacion_sencilla_XML>
+  <Exportacion_multiple_XML>Exportación multiple XML</Exportacion_multiple_XML>
+  <Ver>Ver</Ver>
+  <Incorporar_al_sistema>Incorporar al sistema</Incorporar_al_sistema>
+  <Listado_de_CUPS>Listado de CUPS</Listado_de_CUPS>
+	<Actualizar>Actualizar</Actualizar>
+	<Dias_periodo_facturacion>Días periodo facturación</Dias_periodo_facturacion>
+	<Fecha_de_proxima_factura>Fecha de próxima factura</Fecha_de_proxima_factura>
+	<Fecha_de_actualizacion>Fecha de actualización</Fecha_de_actualizacion>
+	<No_actualizado>No actualizado</No_actualizado>
+	<El_CUPS_X_todavia_no_ha_sido_incorporado_a_BD_desde_XML>El CUPS "%1" todavia no ha sido incorporado a BD desde XML</El_CUPS_X_todavia_no_ha_sido_incorporado_a_BD_desde_XML>
+	<Detalle_de_CUPS>Detalle de CUPS</Detalle_de_CUPS>
+	<Cliente>Cliente</Cliente>
+	<Generar_solicitudes_XML>Generar solicitudes XML</Generar_solicitudes_XML>
+	<Listado_solicitudes_XML>Listado solicitudes XML</Listado_solicitudes_XML>
+	<Solicitud>Solicitud</Solicitud>
+	<Remitente>Remitente</Remitente>
+	<Destinatario>Destinatario</Destinatario>
+	<Listado_de_mensajes>Listado de mensajes</Listado_de_mensajes>
+	<Enviado>Enviado</Enviado>
+	<Recibido>Recibido</Recibido>
+	<Prioridad>Prioridad</Prioridad>
+	<Leido>Leído</Leido>
+	<No_leido>No leído</No_leido>
+	<Asunto>Asunto</Asunto>
+	<Adjuntos>Adjuntos</Adjuntos>
+	<Listado_de_mensajes>Listado de mensajes</Listado_de_mensajes>
+	<mensajes>mensajes</mensajes>
+	<mensaje>mensaje</mensaje>
+	<Destacado>Destacado</Destacado>
+	<Importacion_masiva>Importación masiva</Importacion_masiva>
+	<Datos_externos>Datos In/Out (XML)</Datos_externos>
+	<Parametros_facturas>Parametros facturas</Parametros_facturas>
+	<Tarifa_Reactiva>Tarifa Reactiva</Tarifa_Reactiva>
+	<Tarifa_ATR>Tarifa ATR</Tarifa_ATR>
+	<Tarifa_comercializadora>Tarifa comercializadora</Tarifa_comercializadora>
+	<Tarifa_potencia_estado>Tarifa potencia estado</Tarifa_potencia_estado>
+	<Parametrizacion>Parametrización</Parametrizacion>
+	<Fecha_de_inicio>Fecha de inicio</Fecha_de_inicio>
+	<Fecha_de_fin>Fecha de fin</Fecha_de_fin>
+	<Contrato>Contrato</Contrato>
+	<Datos_del_contrato_asociado>Datos del contrato asociado</Datos_del_contrato_asociado>
+	<Listado_de_tarifas>Listado de tarifas</Listado_de_tarifas>
+	<Tarifas>Tarifas</Tarifas>
+	<Listado_de_parametros>Listado de parametros</Listado_de_parametros>
+	<Parametros>Parametros</Parametros>
+	<Estado>Estado</Estado>
+	<Comercializadora>Comercializadora</Comercializadora>
+	<ATR>ATR</ATR>
+	<Reactiva>Reactiva</Reactiva>
+	<Fecha_de_vigor>Fecha de vigor</Fecha_de_vigor>
+	<Fecha_de_BOE>Fecha de BOE</Fecha_de_BOE>
+	<Tarifa_ATR>Tarifa ATR</Tarifa_ATR>
+	<Porcentaje>Porcentaje</Porcentaje>
+	<Valor>Valor</Valor>
+	<Factura>Factura</Factura>
+	<Facturas_borradas_con_exito>Facturas borradas con exito</Facturas_borradas_con_exito>
+	<Direccion_IP>Dirección IP</Direccion_IP>
+	<Importe_periodo>Importe periodo</Importe_periodo>
+	<Importe>Importe</Importe>
+	<Tarifa>Tarifa</Tarifa>
+	<tarifa>tarifa</tarifa>
+	<estado>estado</estado>
+	<Facturas>Facturas</Facturas>
+	<Actualice_primero>Actualice primero</Actualice_primero>
+	<El_CUPS_X_todavia_no_tiene_el_contrato_generado>El_CUPS %1 todavia no tiene el contrato generado</El_CUPS_X_todavia_no_tiene_el_contrato_generado>
+	<Facturas_de>Facturas de</Facturas_de>
+	<Generar_facturas>Generar facturas</Generar_facturas>
+	<Fecha_de_factura>Fecha de factura</Fecha_de_factura>
+	<Importe_base>Importe base</Importe_base>
+	<Importe_total>Importe total</Importe_total>
+	<Fecha_de_inicio_periodo>Fecha de inicio periodo</Fecha_de_inicio_periodo>
+	<Fecha_de_final_periodo>Fecha de final periodo</Fecha_de_final_periodo>
+	<Ver_factura_de>Ver factura de</Ver_factura_de>
+	<Factura>Factura</Factura>
+	<parametro_de_factura>parametro de factura</parametro_de_factura>
+	<Parametros_de_facturas>Parametros de facturas</Parametros_de_facturas>
+	<Listado_de_parametros_de_facturas>Listado de parametros de facturas</Listado_de_parametros_de_facturas>
+	<Parametro_tipo>Parametro tipo</Parametro_tipo>
+	<Listado_de_facturas>Listado de facturas</Listado_de_facturas>
+	<Validar>Validar</Validar>
+	<Errores_encontrados_en_factura>Errores encontrados en factura</Errores_encontrados_en_factura>
+	<Factura_sin_validar>Factura sin validar</Factura_sin_validar>
+	<Factura_validada>Factura validada</Factura_validada>
+	<Introduzca_los_valores_a_validar>Introduzca los valores a validar</Introduzca_los_valores_a_validar>
+	<Valores_a_validar>Valores a validar</Valores_a_validar>
+	<Importe_potencia>Importe potencia</Importe_potencia>
+	<Importe_energia>Importe energia</Importe_energia>
+	<Importe_reactiva>Importe reactiva</Importe_reactiva>
+	<Validar_factura_de>Validar factura de</Validar_factura_de>
+	<Facturas_generadas_con_exito>Facturas generadas con exito</Facturas_generadas_con_exito>
+	<Factura_validada_con_exito>Factura validada con exito</Factura_validada_con_exito>
+	<Factura_validada_con_errores>Factura validada con errores</Factura_validada_con_errores>
+	<Se_han_encontrado_los_siguientes_errores_de_validacion>Se han encontrado los siguientes errores de validación</Se_han_encontrado_los_siguientes_errores_de_validacion>
+	<Ver_mensaje>Ver mensaje</Ver_mensaje>
+	<mensaje>mensaje</mensaje>
+	<Mensaje>Mensaje</Mensaje>
+	<comer>comercializadora</comer>
+	<reactiva>reactiva</reactiva>
+	<peaje>peaje</peaje>
+	<Incorporar>Incorporar</Incorporar>
+	<Listado_de_proveedores>Listado de proveedores</Listado_de_proveedores>
+	<Proveedor>Proveedor</Proveedor>
+	<Proveedores>Proveedores</Proveedores>
+	<proveedor>proveedor</proveedor>
+	<proveedores>proveedores</proveedores>
+	<Nombre_contacto>Nombre contacto</Nombre_contacto>
+	<Apellidos_contacto>Apellidos contacto</Apellidos_contacto>
+	<Listado_de_medidas>Listado de medidas</Listado_de_medidas>
+	<medida>medida</medida>
+	<medidas>medidas</medidas>
+	<Medida>Medida</Medida>
+	<Medidas>Medidas</Medidas>
+	<Listado_de_pedidos>Listado de pedidos</Listado_de_pedidos>
+	<Pedido>Pedido</Pedido>
+	<Pedidos>Pedidos</Pedidos>
+	<pedido>pedido</pedido>
+	<pedidos>pedidos</pedidos>
+	<Banco_de_alimentos>Banco de alimentos</Banco_de_alimentos>
+	<Banco_Centros>Banco / Centros</Banco_Centros>
+</Textos>
