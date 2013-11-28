@@ -39,11 +39,7 @@ if(parametro("usuario")!=""){// Si viene del formulario
 					$_SESSION["sPANEL_Usuario_Email"]	 	= stripslashes(ValorCelda($resultado,0,"Email"));
 					//CLIENTE/PROVEEDOR VINCULADO AL USUARIO LOGUEADO
 					//echo $_SESSION["sPANEL_Usuario_ID"].'<br />';
-					if($_SESSION["sPANEL_UsuarioRol_ID"] == ROL_PROVEEDOR_ID){
-						$_SESSION["sPANEL_Proveedor_ID"] 	  = intval(ExecQueryValue("SELECT Cliente_ID FROM tbCliente WHERE Usuario_ID = ".$_SESSION["sPANEL_Usuario_ID"]));
-					}else{
-						$_SESSION["sPANEL_Cliente_ID"] 	   	= intval(ExecQueryValue("SELECT Cliente_ID FROM tbCliente WHERE Usuario_ID = ".$_SESSION["sPANEL_Usuario_ID"]));
-					}
+					
 					//echo $_SESSION["sPANEL_Cliente_ID"]; echo $_SESSION["sPANEL_Proveedor_ID"];
 					$_SESSION["sPANEL_Idioma"] 					= $idioma;
 					switch ($idioma)
