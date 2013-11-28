@@ -2,6 +2,7 @@
 /*
 	entorno 0 para desarrollo
 	entorno 1 para produccion
+	entorno 2 para Mangeles :o)
 */
-define("ENTORNO", 0);
+define("ENTORNO", 2);
 ?>
