@@ -35,7 +35,7 @@ echo $strHtml;
 			
 			$Cliente_ID 				= intval(ValorCelda($resultado,0,"Cliente_ID"));
 			$Email 							= stripslashes(ValorCelda($resultado,0,"Email"));
-			$Banco_ID						= intval(ValorCelda($resultado,0,"Banco_ID"));
+			//$Banco_ID						= intval(ValorCelda($resultado,0,"Banco_ID"));
 			$FechaAlta 					= fechaHoraNormal(ValorCelda($resultado,0,"FechaAlta"));
 			$arrFechaAlta 			= split(" ", $FechaAlta);
 			$FechaAlta					= $arrFechaAlta[0];
@@ -55,27 +55,28 @@ echo $strHtml;
 			$HoraUltimoAcceso		= $arrFechaUltimoAcceso[1];
 			$IP									= stripslashes(ValorCelda($resultado,0,"IP"));
 			$Nombre 						= stripslashes(ValorCelda($resultado,0,"Nombre"));
-			$Apellidos 					= stripslashes(ValorCelda($resultado,0,"Apellidos"));
-			$NIF 								= stripslashes(ValorCelda($resultado,0,"NIF"));
-			$RazonSocial				= stripslashes(ValorCelda($resultado,0,"RazonSocial"));
-			$Telefono						= stripslashes(ValorCelda($resultado,0,"Telefono"));
-			$Movil							= stripslashes(ValorCelda($resultado,0,"Movil"));
-			$Direccion					= stripslashes(ValorCelda($resultado,0,"Direccion"));
-			$Poblacion					= stripslashes(ValorCelda($resultado,0,"Poblacion"));
-			$Provincia_ID				= intval(ValorCelda($resultado,0,"Provincia_ID"));
-			$Pais_ID						= intval(ValorCelda($resultado,0,"Pais_ID"));
-			$CP									= stripslashes(ValorCelda($resultado,0,"CP"));
-			$Observaciones			= stripslashes(ValorCelda($resultado,0,"Observaciones"));
-			$Lat								= floatval(ValorCelda($resultado,0,"Lat"));
-			$Lon								= floatval(ValorCelda($resultado,0,"Lon"));
-			$Ubicacion					= stripslashes(ValorCelda($resultado,0,"Ubicacion"));
+			$Login 					= stripslashes(ValorCelda($resultado,0,"login"));
+			$TipoCliente_ID				= intval(ValorCelda($resultado,0,"TipoCliente_ID"));
+		//	$NIF 								= stripslashes(ValorCelda($resultado,0,"NIF"));
+		//	$RazonSocial				= stripslashes(ValorCelda($resultado,0,"RazonSocial"));
+		//	$Telefono						= stripslashes(ValorCelda($resultado,0,"Telefono"));
+		//	$Movil							= stripslashes(ValorCelda($resultado,0,"Movil"));
+		//	$Direccion					= stripslashes(ValorCelda($resultado,0,"Direccion"));
+		//	$Poblacion					= stripslashes(ValorCelda($resultado,0,"Poblacion"));
+		//	$Provincia_ID				= intval(ValorCelda($resultado,0,"Provincia_ID"));
+		//	$Pais_ID						= intval(ValorCelda($resultado,0,"Pais_ID"));
+		//	$CP									= stripslashes(ValorCelda($resultado,0,"CP"));
+		//	$Observaciones			= stripslashes(ValorCelda($resultado,0,"Observaciones"));
+		//	$Lat								= floatval(ValorCelda($resultado,0,"Lat"));
+		//	$Lon								= floatval(ValorCelda($resultado,0,"Lon"));
+		//	$Ubicacion					= stripslashes(ValorCelda($resultado,0,"Ubicacion"));
 			
-			$bBanco						= intval(ValorCelda($resultado,0,"bBanco"));
-			if($bBanco==1){
-				$strBanco = "checked";
-			}else{
-				$strBanco = "";
-			}
+		//	$bBanco						= intval(ValorCelda($resultado,0,"bBanco"));
+		//	if($bBanco==1){
+		//		$strBanco = "checked";
+		//	}else{
+		//		$strBanco = "";
+		//	}
 			
 			$bActivo						= intval(ValorCelda($resultado,0,"bActivo"));
 			if($bActivo==1){
@@ -124,15 +125,15 @@ echo $strHtml;
 			//$('#ip').mask('0ZZ.0ZZ.0ZZ.0ZZ', {translation: {'Z': {pattern: /[0-9]/, optional: true}});
 		});
 
-		function pais_IDOnChange(){
-			$('#provincia_ID').html('<option selected>Cargando provincias...</option>');
-		            
-		 	var idPais = $('#pais_ID').val();
-			var toLoad = '/funciones/AjaxCargarProvincias.php?pais_ID='+ idPais ;
-			$.post(toLoad,function (responseText){
-				$('#provincia_ID').html(responseText);
-			});
-		}
+//		function pais_IDOnChange(){
+	//		$('#provincia_ID').html('<option selected>Cargando provincias...</option>');
+		//            
+//		 	var idPais = $('#pais_ID').val();
+	//		var toLoad = '/funciones/AjaxCargarProvincias.php?pais_ID='+ idPais ;
+//			$.post(toLoad,function (responseText){
+	//			$('#provincia_ID').html(responseText);
+	//		});
+	//	}
 	</script>
 			<!-- Migas de pan -->
 			<div class="page-header">
@@ -168,7 +169,7 @@ echo $strHtml;
 								<div class="alert alert-info">
 									<i class="icon-info-sign icon-large"></i> <strong><?php echo TextoDeIdioma("Introduzca_la_informacion_requerida"); ?></strong>
 								</div>
-								
+							
 								<?php } ?>
 								<form name="frmDatos" id="frmDatos" action="proceso.php" method="post" class="form-horizontal form-bordered form-validate">
 									<input type="hidden" name="accion" value="<?php echo $accion;?>" />
@@ -180,6 +181,26 @@ echo $strHtml;
 											<span class="help-block">*<?php echo TextoDeIdioma("El_codigo_no_se_puede_cambiar")?></span>
 										</div>
 									</div>
+									<div class="control-group">
+										<label for="login" class="control-label"><?php echo TextoDeIdioma("Tipo_Cliente")?></label>
+										<div class="controls">
+										    <select id="TipoCliente_ID" name="TipoCliente_ID" class="input-block">
+										    <option value="1"<?php if ($Cliente_ID=="1") echo " selected"; ?>>Persona</option>
+										    <option value="2"<?php if ($Cliente_ID=="2") echo " selected"; ?>>Empresa</option>
+										    </select>
+									
+										</div>
+									</div>
+								
+									<div class="control-group">
+										<label for="login" class="control-label"><?php echo TextoDeIdioma("Login")?></label>
+										<div class="controls">
+											<input type="text" name="login" id="login" value="<?php echo $Login?>" data-rule-required="true" data-msg-required="<?php echo TextoDeIdioma("Introduzca_un_login_de_usuario")?>" />
+											<span class="help-block">*El login no se puede cambiar</span>
+								
+									    </div>
+									</div>
+								  
 									<div class="control-group">
 										<label for="email" class="control-label"><?php echo TextoDeIdioma("Email")?></label>
 										<div class="controls">
@@ -214,98 +235,14 @@ echo $strHtml;
 										</div>
 									</div>
 									
-									<div class="control-group">
-										<label for="razonSocial" class="control-label"><?php echo TextoDeIdioma("Razon_social")?></label>
-										<div class="controls">
-											<input type="text" name="razonSocial" id="razonSocial" value="<?php echo $RazonSocial?>" data-rule-required="false" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Razon_social")?>" />
-										</div>
-									</div>
+								
 									<div class="control-group">
 										<label for="nombre" class="control-label"><?php echo TextoDeIdioma("Nombre")?></label>
 										<div class="controls">
 											<input type="text" name="nombre" id="nombre" value="<?php echo $Nombre?>" data-rule-required="true" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_nombre")?>" />
 										</div>
 									</div>
-									<div class="control-group">
-										<label for="apellidos" class="control-label"><?php echo TextoDeIdioma("Apellidos")?></label>
-										<div class="controls">
-											<input type="text" name="apellidos" id="apellidos" value="<?php echo $Apellidos?>" data-rule-required="true" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "apellidos")?>" />
-										</div>
-									</div>
-									
-									<div class="control-group">
-										<label for="nif" class="control-label"><?php echo TextoDeIdioma("NIF_CIF")?></label>
-										<div class="controls">
-											<input type="text" name="nif" id="nif" value="<?php echo $NIF?>" data-rule-required="false" class="input-small" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "NIF")?>" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label for="telefono" class="control-label"><?php echo TextoDeIdioma("Telefono")?></label>
-										<div class="controls">
-											<input type="text" name="telefono" id="telefono" value="<?php echo $Telefono?>" data-rule-required="false" class="input-small" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Telefono")?>" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label for="movil" class="control-label"><?php echo TextoDeIdioma("Movil")?></label>
-										<div class="controls">
-											<input type="text" name="movil" id="movil" value="<?php echo $Movil?>" data-rule-required="false" class="input-small" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Movil")?>" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label for="direccion" class="control-label"><?php echo TextoDeIdioma("Direccion")?></label>
-										<div class="controls">
-											<input type="text" name="direccion" id="direccion" value="<?php echo $Direccion?>" data-rule-required="false" class="input-normal" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Direccion")?>" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label for="poblacion" class="control-label"><?php echo TextoDeIdioma("Poblacion")?></label>
-										<div class="controls">
-											<input type="text" name="poblacion" id="poblacion" value="<?php echo $Poblacion?>" data-rule-required="false" class="input-normal" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Poblacion")?>" />
-										</div>
-									</div>
-
-									<div class="control-group">
-										<label for="pais_ID" class="control-label"><?php echo TextoDeIdioma("Pais")?></label>
-										<div class="controls">
-											<?php
-											$sql = "SELECT IdPais valor, Nombre descripcion
-												FROM tbPais";
-											$sql .= " ORDER BY Nombre";
-											$strCombo = generaComboBox( $sql
-													, "pais_ID"
-													, $noSeleccion="-- ".TextoDeIdioma("Seleccione_un_elemento")." --"
-													, $Pais_ID
-													, "onChange=\"return pais_IDOnChange()\" data-rule-required=\"true\" data-msg-required=\"".TextoDeIdioma("Seleccione_un_elemento_de_la_lista")."\""
-											);
-											echo $strCombo;?>
-										</div>	
-									</div>
-									<div class="control-group">
-										<label for="provincia_ID" class="control-label"><?php echo TextoDeIdioma("Provincia")?></label>
-										<div class="controls">
-											<?php
-											$sql = "SELECT IdProvincia valor, Nombre descripcion
-												FROM tbProvincia";
-											$sql .= " WHERE IdPais = ".$Pais_ID;
-											$sql .= " ORDER BY Nombre";
-											$strCombo = generaComboBox( $sql
-													, "provincia_ID"
-													, $noSeleccion="-- ".TextoDeIdioma("Seleccione_un_elemento")." --"
-													, $Provincia_ID
-													, "data-rule-required=\"false\" data-msg-required=\"".TextoDeIdioma("Seleccione_un_elemento_de_la_lista")."\""
-											);
-											echo $strCombo;?>
-										</div>
-									</div>
-									
-									<span id="advice"> </span>
-									<div class="control-group">
-										<label for="cp" class="control-label"><?php echo TextoDeIdioma("CP")?></label>
-										<div class="controls">
-											<input type="text" name="cp" id="cp" value="<?php echo $CP?>" data-rule-required="false" class="input-small" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "CP")?>" />
-										</div>
-									</div>
-									
+								  	
 									<div class="control-group">
 						        <label for="fechaAlta" class="control-label"><?php echo TextoDeIdioma("Fecha_de_alta")?> <small>[dd/mm/yyyy hh:mm]</small></label>
 						        <div class="controls">
@@ -320,7 +257,7 @@ echo $strHtml;
 						        </div>
 						    	</div>
 						    	<?php 
-		              if($accion==ACCION_EDITAR){?>
+		                      if($accion==ACCION_EDITAR){?>
 						    	<div class="control-group">
 						        <label for="fechaBaja" class="control-label"><?php echo TextoDeIdioma("Fecha_de_baja")?> <small>[dd/mm/yyyy hh:mm]</small></label>
 						        <div class="controls">
@@ -354,68 +291,8 @@ echo $strHtml;
 											<input type="text" name="ip" id="ip" value="<?php echo $IP?>" data-rule-required="false" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "IP")?>" />
 										</div>
 									</div>
-									<div class="control-group">
-										<label for="observaciones" class="control-label"><?php echo TextoDeIdioma("Observaciones")?> <small></small></label>
-										<div class="controls">
-											<div>
-												<textarea name="observaciones" id="observaciones" class="cleditor" rows="5"><?php echo $Observaciones?></textarea>
-											</div>
-										</div>
-									</div>
 									
-									<?php if($accion==ACCION_EDITAR){?>
-										<?php if($bBanco==1){?>
-											<div class="control-group">
-												<label for="chkBanco" class="control-label"><?php echo TextoDeIdioma("Banco_de_alimentos")?></label>
-												<div class="controls">
-													<input type="checkbox" name="chkBanco" id="chkBanco" value="1" <?php echo $strBanco?>>
-												</div>
-											</div>
-										<?php }else{?>
-											<div class="control-group">
-												<label for="banco_ID" class="control-label"><?php echo TextoDeIdioma("Banco")?></label>
-												<div class="controls">
-													<?php
-													$sql = "SELECT Cliente_ID valor, RazonSocial descripcion
-														FROM tbCliente";
-													$sql .= " WHERE bBanco = 1";
-													$sql .= " ORDER BY RazonSocial";
-													$strCombo = generaComboBox( $sql
-															, "banco_ID"
-															, $noSeleccion="-- ".TextoDeIdioma("Seleccione_un_elemento")." --"
-															, $Banco_ID
-															, "data-rule-required=\"false\" data-msg-required=\"".TextoDeIdioma("Seleccione_un_elemento_de_la_lista")."\""
-													);
-													echo $strCombo;?>
-												</div>
-											</div>
-										<?php }?>
-									<?php }else{?>
-										<div class="control-group">
-											<label for="chkBanco" class="control-label"><?php echo TextoDeIdioma("Banco_de_alimentos")?></label>
-											<div class="controls">
-												<input type="checkbox" name="chkBanco" id="chkBanco" value="1" <?php echo $strBanco?>>
-											</div>
-										</div>
-									<?php }?>
-									<div class="control-group">
-										<label for="lat" class="control-label"><?php echo TextoDeIdioma("Latitud")?></label>
-										<div class="controls">
-											<input type="text" name="lat" id="lat" value="<?php echo $Lat?>" data-rule-required="false" class="input-normal" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Latitud")?>" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label for="lon" class="control-label"><?php echo TextoDeIdioma("Longitud")?></label>
-										<div class="controls">
-											<input type="text" name="lon" id="lon" value="<?php echo $Lon?>" data-rule-required="false" class="input-normal" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Longitud")?>" />
-										</div>
-									</div>
-									<div class="control-group">
-										<label for="ubicacion" class="control-label"><?php echo TextoDeIdioma("Ubicacion")?></label>
-										<div class="controls">
-											<input type="text" name="ubicacion" id="ubicacion" value="<?php echo $Ubicacion?>" data-rule-required="false" class="input-normal" data-msg-required="<?php echo TextoDeIdioma("Introduzca_el_campo_X", "Ubicacion")?>" />
-										</div>
-									</div>
+							
 									<div class="control-group">
 										<label for="chkActivo" class="control-label"><?php echo TextoDeIdioma("Activo")?></label>
 										<div class="controls">

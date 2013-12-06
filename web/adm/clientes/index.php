@@ -212,9 +212,9 @@ $urlPag = $paginaHtml."?orden=".$orden."&tipoOrden=".$tipoOrden.$paramsFiltro;
 	<?php
 	
 	$PA = "SELECT DISTINCT ";
-	$PA .= "		Cliente_ID, ClienteRol_ID,Login, TipoCliente_ID, Nombre, Email,";
-	$PA .= "		FechaAlta, FechaUltimoAcceso, bActivo ";
-	$PA .= " FROM 	tbCliente ";
+	$PA .= "		C.Cliente_ID, C.ClienteRol_ID,C.Login, C.TipoCliente_ID, C.Nombre, T.Nombre as TipoCliente,C.Email,";
+	$PA .= "		C.FechaAlta, C.FechaUltimoAcceso, C.bActivo ";
+	$PA .= " FROM 	tbCliente C join tbtipocliente T on T.TipoCliente_ID=C.TipoCliente_ID";
 	$PA .= $strSQLWhere;
 	$PA .= $strSQLOrden;
 	$PA .= " LIMIT ".$inicio.", ".$regsPorPag;
