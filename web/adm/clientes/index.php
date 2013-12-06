@@ -210,9 +210,10 @@ $urlPag = $paginaHtml."?orden=".$orden."&tipoOrden=".$tipoOrden.$paramsFiltro;
 
 	<!-- REGISTROS -->
 	<?php
+	
 	$PA = "SELECT DISTINCT ";
-	$PA .= "		Cliente_ID, Usuario_ID, Banco_ID, Nombre, Apellidos, Email, NIF, RazonSocial";
-	$PA .= "		, FechaAlta, FechaUltimoAcceso, bBanco, bActivo ";
+	$PA .= "		Cliente_ID, ClienteRol_ID,Login, TipoCliente_ID, Nombre, Email,";
+	$PA .= "		FechaAlta, FechaUltimoAcceso, bActivo ";
 	$PA .= " FROM 	tbCliente ";
 	$PA .= $strSQLWhere;
 	$PA .= $strSQLOrden;
@@ -272,12 +273,13 @@ $urlPag = $paginaHtml."?orden=".$orden."&tipoOrden=".$tipoOrden.$paramsFiltro;
 								<thead>
 									<tr>
 										<?php echo CampoCabeceraTablaListado("Cliente_ID", TextoDeIdioma("Codigo"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "center");?>
-										<?php echo CampoCabeceraTablaListado("RazonSocial", TextoDeIdioma("Razon_social"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "left");?>
+										<?php echo CampoCabeceraTablaListado("Login", TextoDeIdioma("Login"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "left");?>
 										<?php echo CampoCabeceraTablaListado("Email", TextoDeIdioma("Email"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "left");?>
 										<?php echo CampoCabeceraTablaListado("Nombre", TextoDeIdioma("Nombre"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "left");?>
-										<?php echo CampoCabeceraTablaListado("Apellidos", TextoDeIdioma("Apellidos"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "left");?>
-										<th style="text-align:center"><?php echo TextoDeIdioma("Banco_Centros")?></th>
-										<?php echo CampoCabeceraTablaListado("FechaAlta", TextoDeIdioma("Fecha_de_alta"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "center");?>
+										<?php echo CampoCabeceraTablaListado("TipoCliente", TextoDeIdioma("Tipo_Cliente"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "left");?>
+										<?php echo CampoCabeceraTablaListado("Rol", TextoDeIdioma("Rol"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "left");?>
+					
+									    <?php echo CampoCabeceraTablaListado("FechaAlta", TextoDeIdioma("Fecha_de_alta"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "center");?>
 										<?php echo CampoCabeceraTablaListado("bActivo", TextoDeIdioma("Activo"), $orden, $paginaHtml, $paramsFiltro, $htmlTipoOrdenASC, $htmlTipoOrdenDESC, "center");?>
 										<?php if($_SESSION["sPANEL_UsuarioRol_ID"] < ROL_PROVEEDOR_ID ){?>
 											<th style="text-align:center"><?php echo TextoDeIdioma("Editar")?></th>
